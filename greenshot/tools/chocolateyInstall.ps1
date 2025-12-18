@@ -1,7 +1,7 @@
-$ErrorActionPreference = 'Stop' # stop on all errors
+﻿$ErrorActionPreference = 'Stop' # stop on all errors
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url            = 'https://github.com/greenshot/greenshot/releases/download/v1.3.301/Greenshot-INSTALLER-1.3.301-RELEASE.exe'
-$checksumSha256 = 'b917f872d59065f297d63ee0f7228eb78d147f14af9be4fba950d1e8970a4be3'
+$url            = 'https://github.com/greenshot/greenshot/releases/download/v1.3.304/Greenshot-INSTALLER-1.3.304-RELEASE.exe'
+$checksum = '3b1450f1183d7f272bab8c36c3c093bc74711eb40dcf722852b7361e9ef297c4'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -12,7 +12,7 @@ $packageArgs = @{
 
   softwareName  = 'Greenshot*'
 
-  checksum      = $checksumSha256
+  checksum      = $checksum
   checksumType  = 'sha256'
   checksum64    = ''
   checksumType64= 'sha256'
